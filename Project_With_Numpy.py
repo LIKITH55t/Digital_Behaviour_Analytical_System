@@ -1,5 +1,6 @@
 import numpy as np
 import csv
+                        #""" SUPER CALCULATOR ->NUMPY"""
 APP1="Instagram"
 APP2="Study"
 insta_minutes = []
@@ -44,6 +45,19 @@ print(diff)
    if val>100:
       greater.append(val)'''
  
-greater=instagram>100 #in numpy
-print(greater)
+boolean=instagram>100 #in numpy
+print(boolean)
+
+#python_filtering=[bool_ for bool_ in boolean if bool_]
+#python_filtering=filter(lambda bool_: bool_,boolean)
+# in numpy
+greater=instagram[instagram>100] #boolean indexing
+"""count=(instagram>100)
+count=count.sum()
+count=(instagram>100).sum() #operator chaining"""
+count=greater.sum()
+above_avg=instagram[instagram>insta_average]
+
+
+
 
